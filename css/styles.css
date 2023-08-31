@@ -1,0 +1,107 @@
+/* basic styling */
+* { 
+    box-sizing:border-box;
+}
+body {
+    background: #ccc;
+    color: black;
+}
+  header {
+    background: white;
+    font: 100 1rem/1.2 Menlo ;
+  }
+  .logo-combo{
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    display: block;
+    margin-right: 1rem;
+  }
+  header h1 {
+    color:hotpink;
+    margin: auto;
+    font-size: clamp(2.0rem, 5vw, 2.5rem);margin:0;
+  }
+  nav {
+    background-color: hotpink;
+  }
+  nav ul {
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    padding:0;
+    margin:0;
+}
+nav a {
+    display:block;
+    margin: 10px;
+    color:white;
+    text-decoration:none;
+  }
+
+  main {
+    display:grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 0.5em;
+ 
+  }
+
+  main  h1 {
+    margin:0;
+    font-size: 18pt;
+    color: white;
+    padding-top: 2rem;
+  }
+  
+  main img {
+    object-fit:cover;
+    width:100%;
+    height:100%;
+  }
+  .five {
+  background-color: #bca;
+  width: 100%;
+  height: 100%;
+ }
+ .five p {
+   font-size: 14pt;
+   color: black;
+ }
+  aside {
+    background: #ccc;
+  }
+  footer {
+    background: #88d8b0;
+  }
+  h1 {
+    text-align: center;
+  } 
+  
+
+  
+  /* end basic styling */
+  
+  
+  /* default minimal layout styles  -  mobile */
+
+      /* make the nav stick to bottom of screen 
+      for easy access with thumb on smartphones */
+      /*  nav {
+           position: fixed;
+           z-index: 0;
+           width: 100vw;
+           bottom: 0;
+         }
+    /* make room so footer isn't covered by nav */
+  
+  
+  /* style orverrides for widescreen layout */
+  
+  @media screen and (min-width: 600px) {
+    
+    main {
+      display:grid;
+      grid-template-columns: 2fr 1fr 2fr;
+  }
+}
